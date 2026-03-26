@@ -21,6 +21,12 @@ let utente = prompt("inserire la propria email")
 //variabile per trovare email booleana
 let trova_email = false;
 
+// inserita validazione
+if (utente === "" || utente==="null") {
+    console.error("inserito valore nullo o vuoto, riprovare");   
+} else {console.log("inserito valore, verifichiamo se valido.");
+}
+
 //scorri lista e dice guardo da 0 a 6
 for (let i = 0; i <= 6; i++) {
     // se utente inserisce email corretta dentro i 
@@ -34,5 +40,4 @@ if (trova_email === true) {
 
 } else {
     console.log("accesso negato");
-
-} 
+}

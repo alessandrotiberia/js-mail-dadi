@@ -14,5 +14,4 @@ if (numero_utente > numero_pc) {
 
 } else {
     console.log("numero utente pari al numero del pc");
-
 }

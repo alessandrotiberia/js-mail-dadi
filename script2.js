@@ -16,15 +16,16 @@ Non è necessario provvedere alla validazione delle email, però se volete è un
 let email = ["mail0", "mail1", "mail2", "mail3", "mail4", "mail5", "mail6"];
 
 //prompt per chiedere utente la sua email
-let utente = prompt("inserire la propria email")
+let utente = prompt("inserire la propria email");
 
 //variabile per trovare email booleana
 let trova_email = false;
 
 // inserita validazione
 if (utente === "" || utente==="null") {
-    console.error("inserito valore nullo o vuoto, riprovare");   
-} else {console.log("inserito valore, verifichiamo se valido.");
+    console.error("inserito valore nullo o vuoto, riprovare");
+} else {
+    console.log("inserito valore, verifichiamo se valido.");
 }
 
 //scorri lista e dice guardo da 0 a 6
@@ -32,7 +33,6 @@ for (let i = 0; i <= 6; i++) {
     // se utente inserisce email corretta dentro i 
     if (utente === email[i]) {
         trova_email = true; // qui diventa vero esci dal ciclo
-
     }
 } // se controllo ok stampa altrimenti non ok accesso negato
 if (trova_email === true) {
